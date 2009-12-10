@@ -1,0 +1,10 @@
+---
+en-US:
+  suppliers: "Suppliers"
+  supplier_name: "Supplier Name"
+  new_supplier: "New Supplier"
+  available_suppliers: "Available Suppliers"
+  editing_supplier: "Editing Supplier"
+  fax: "Fax"
+  notes: "Notes"
+  suppliers_description: "Manage Suppliers"

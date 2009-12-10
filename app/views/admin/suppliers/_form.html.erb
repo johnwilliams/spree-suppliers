@@ -1,0 +1,51 @@
+<table class="admin-report" width="545">
+  <tr>
+    <td valign="top"><%=t("supplier_name")%>:</td>
+    <td><%= f.text_field :name %></td>
+  </tr>
+  <tr>
+    <td valign="top"><%=t("activerecord.attributes.address.address1")%>:</td>
+    <td><%= f.text_field :address1 %></td>
+  </tr>
+  <tr>
+    <td valign="top"><%=t("activerecord.attributes.address.address2")%>:</td>
+    <td><%= f.text_field :address2 %></td>
+  </tr>
+  <tr>
+    <td valign="top"><%=t("activerecord.attributes.address.city")%>:</td>
+    <td><%= f.text_field :city %></td>
+  </tr>
+  <tr>
+    <td valign="top"><%=t("state")%>:</td>
+    <td><%= f.collection_select( 
+                          :state_id, 
+                          @states, 
+                          :id, 
+                          :name, 
+                          {:include_blank => true}) %></td>
+  </tr>
+  <tr>
+    <td valign="top"><%=t("activerecord.attributes.address.zipcode")%>:</td>
+    <td><%= f.text_field :zip_code %></td>
+  </tr>
+  <tr>
+    <td valign="top"><%=t("phone")%>:</td>
+    <td><%= f.text_field :phone %></td>
+  </tr>
+  <tr>
+    <td valign="top"><%=t("fax")%>:</td>
+    <td><%= f.text_field :fax %></td>
+  </tr>
+  <tr>
+    <td valign="top"><%=t("email")%>:</td>
+    <td><%= f.text_field :email %></td>
+  </tr>
+  <tr>
+    <td valign="top"><%=t("website")%>:</td>
+    <td><%= f.text_field :website %></td>
+  </tr>
+  <tr>
+    <td valign="top"><%=t("notes")%>:</td>
+    <td><%= f.text_area :notes %></td>
+  </tr>
+</table>
