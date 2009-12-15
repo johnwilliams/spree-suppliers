@@ -1,7 +1,7 @@
 # Uncomment this if you reference any of your controllers in activate
 # require_dependency 'application'
 
-class SupplierExtension < Spree::Extension
+class SuppliersExtension < Spree::Extension
   version "0.1"
   description "Describe your extension here"
   url "Adds the ability to set a supplier for individual products."
